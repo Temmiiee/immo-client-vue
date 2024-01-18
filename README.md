@@ -1,18 +1,37 @@
-# Vue 3 + TypeScript + Vite
+# Immo Client Vue
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Immo Client Vue est une application Vue 3 + Typescript + Vite qui offre une interface conviviale pour accéder à une liste de biens immobiliers destinée aux clients potentiels.
 
-## Recommended IDE Setup
+## Fonctionnalités
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- Accès à une liste de biens immobiliers depuis l'API à l'adresse [localhost:8081/api](http://localhost:8081/api).
+- Interface utilisateur intuitive développée avec Vue 3, Typescript et Vite.
 
-## Type Support For `.vue` Imports in TS
+## Prérequis
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+Assurez-vous d'avoir installé [Docker](https://www.docker.com/) sur votre machine avant de lancer l'application.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## Installation
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/Temmiiee/immo-client-vue
+   
+2. Accédez au répertoire du projet :
+   ```bash
+   cd immo-client-vue
+   
+3. Lancez le docker-compose pour démarrer l'application :
+   ```bash
+   docker-compose up
+
+L'application sera accessible à l'adresse localhost:8080.
+
+## Configuration
+
+L'application est configurée pour récupérer les données depuis l'API à l'adresse localhost:8081/api. 
+Veuillez vous assurer que l'API est correctement configurée et accessible.
+Il est possible de modifier l'adresse de l'API depuis le fichier .env
+
+
+
